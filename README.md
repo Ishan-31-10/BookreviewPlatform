@@ -65,8 +65,7 @@ npm install
 4. Create .env Files
 Backend (backend/.env):
 PORT=5000
-MONGO_URI=mongodb://127.0.0.1:27017/bookReviewDB
-JWT_SECRET=your-secret-key
+MONGO_URI=mongodb+srv://<user>:<pass>@cluster0.s0wt9vh.mongodb.net/bookreviewData?retryWrites=true&w=majority
 
 Frontend (frontend/.env):
 REACT_APP_API_BASE_URL=http://localhost:5000/api

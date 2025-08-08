@@ -1,7 +1,7 @@
 
 # Book Review Platform
 
-A full-stack MERN application for managing books and user reviews, featuring secure authentication, filtering, pagination, and a responsive UI.
+A full-stack MERN application for managing books and user reviews, with secure authentication, filtering, pagination, and a responsive UI.
 Features
 
 JWT-based authentication for secure login and registration.
@@ -39,10 +39,18 @@ book-review-platform/
 
 Setup Instructions
 1. Clone the Repository
-git clone https://github.com/<your-username>/book-review-platform.git
+git clone https://github.com/Ishan-31-10/BookreviewPlatform.git
 cd book-review-platform
 
-2. Install Dependencies
+2. Initialize Git (If Starting Fresh)
+git init
+git add .
+git commit -m "Initial commit"
+git branch -M main
+git remote add origin https://github.com/Ishan-31-10/BookreviewPlatform.git
+git push -u origin main
+
+3. Install Dependencies
 # Root dependencies
 npm install
 
@@ -54,7 +62,7 @@ npm install
 cd ../frontend
 npm install
 
-3. Create .env Files
+4. Create .env Files
 Backend (backend/.env):
 PORT=5000
 MONGO_URI=mongodb://127.0.0.1:27017/bookReviewDB
@@ -63,7 +71,7 @@ JWT_SECRET=your-secret-key
 Frontend (frontend/.env):
 REACT_APP_API_BASE_URL=http://localhost:5000/api
 
-4. Run the Application
+5. Run the Application
 npm run dev
 
 This starts:
@@ -112,4 +120,8 @@ Integer-only ratings (1–5 stars).
 No book cover image uploads.
 Local React state may need Redux for scaling.
 Security: Restrict MongoDB access in production.
+
+
+
+
 
